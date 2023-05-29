@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7a09ab6782.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicios con JS</title>
+</head>
+<body id="body">
+    <div class="contain">
+        <br><br>
+        <h2>Ejercicios con JavaScript</h2>
+        <p>Instrucciones generales</p>
+        <p>Realiza los ejercicios que se te presentan a continuación con JavaScript en una sola página web.</p>
+        <p>Utiliza CSS para personalizar los estilos de la página y que sean diferentes al ejemplo.</p>
+        <br><br>
+        <button class="accordion">Ejercicio 1</button>
+        <div class="panel">
+            <span style="font-style: italic;">Crea 5 botones que muestren los siguientes mensajes en un alert. <br> Modifica el estilo de los botones.<br>Da clic en un botón para ver el ejemplo <br></span>
+            <button class="btn style_one" onclick="mostarAlert('Hola')">Hola</button>
+            <button class="btn style_one" onclick="mostarAlert('Mundo')">Mundo</button>
+            <button class="btn style_one" onclick="mostarAlert('...')">Desde</button>
+            <button class="btn style_one" onclick="mostarAlert('...')">JavaScript</button>
+            <button class="btn style_one" onclick="mostarAlert('...')">Pablo Machan</button>
+        </div>
+
+        <button class="accordion">Ejercicio 2</button>
+        <div class="panel">
+            <span style="font-style: italic;">Realizar las siguientes operaciones aritmeticas con ayuda de Prompt<br>Personaliza los botones y la respuesta con CSS<br>Da clic en Suma para ver el ejemplo<br></span>
+
+            <button class="btn default" onclick="operacionesAritmeticas('suma')">Suma</button>
+            <button class="btn default" onclick="mostarAlert('Hazlo tu mismo')">Resta</button>
+            <button class="btn default" onclick="mostarAlert('Hazlo tu mismo')">Multiplicación</button>
+            <button class="btn default" onclick="mostarAlert('Hazlo tu mismo')">División</button>
+            <button class="btn default" onclick="mostarAlert('Hazlo tu mismo')">Potencia</button>
+            <div class="respuesta" id="respuesta" ></div>
+            
+        </div>
+
+        <button class="accordion">Ejercicio 3</button>
+        <div class="panel">
+            <span style="font-style: italic;">Modifica la respuesta del ejercicio 2. <br> Al dar clic en la respuesta que se muestre en grande.<br>Crea tu propia solución.
+        </div>
+
+        <button class="accordion">Ejercicio 4</button>
+        <div class="panel">
+            <span style="font-style: italic;">Realiza una calculadora contable<br>1. Crea un botón para ingresar un valor con Prompt<br>2.Crea un botón para relizar los cálculos correspondientes<br></span>
+            <br>
+            <button class="btn style_one" onclick="mostarAlert('Hazlo tu mismo')">Ingresa el precio del producto</button>
+            <span>Aquí va el valor del producto</span> <br><br>
+            <button class="btn style_one" onclick="mostarAlert('Hazlo tu mismo')">Mostrar el valor del producto sin IVA</button>
+            <span>Formula: valor_producto / 1.12 </span> <br><br>
+            <button class="btn style_one" onclick="mostarAlert('Hazlo tu mismo')">Calcular IVA del producto</button>
+            <span></span> Formula: valor_producto - producto_siniva<br>
+        </div>
+        
+        <button class="accordion">Ejercicio 5</button>
+        <div class="panel">
+            <span>Realiza un contador que cuente de 1 a 10 y muestre el progreso en una barra</span>
+            <div class="temporizador" id="barra_temporizador"></div>
+            <br>
+            <button class="btn default" onclick="temporizador()">Iniciar</button>
+            <br>
+            <span>Para realizar este ejercicio recuerda que en JavaScript puedes modificar los estilos.</span>
+            <br>
+            <span>La instrucción innerHTML permite introducir código HTML a otra etiqueta desde JavaScript</span>
+            <br>
+            <span>Utiliza variables para modificar el contador</span>
+            <br>
+            <span>Utiliza el operador += para incrementar el contador</span>
+            <br>
+            <span>Utiliza condición If para limitar el contador hasta 10</span>
+        </div>
+
+        <button class="accordion">Ejercicio 6</button>
+        <div class="panel">
+            <span>Crear un botón para vaciar la barra del contador</span>
+            <br>
+            <button class="btn default" onclick="vaciar()">Vaciar</button>
+            <br>
+            <span>Para realizar este ejercicio recuerda que en JavaScript puedes modificar el contenido HTML con innerHTML</span>
+        </div>
+
+        <button class="accordion">Ejercicio 7</button>
+        <div class="panel">
+            <span>Realiza una calculadora de areas con las siguientes figuras</span>
+            <br>
+            <span>Al dar clic en una figura deberás pedir los datos necesarios para realizar le cálculo y mostrar el área en pantalla</span>
+            <div class="cuadrado"></div>
+            <div class="rectangulo"></div>
+            <div class="triangulo"></div>
+            <div class="circulo"></div>
+        </div>
+        <button class="accordion">Ejercicio 8</button>
+        <div class="panel">
+            <span>Crea un semáforo como el siguiente <a href="https://jarv-javiermachan.github.io/jarv-semaforo/">Ejemplo</a></span>
+            <br>
+            <span>Ten encuenta que debes utilizar Prompt para capturar los datos</span>
+            <br>
+            <span>Utiliza un DIV para cambiar de color de fondo a amarillo y a rojo</span>
+        </div>
+        <button class="accordion">Ejercicio 9</button>
+        <div class="panel">
+            <span>Crea un Reloj digital en dónde muestre la hora actual el siguiente formato H:M:S</span>
+            <br>
+            <span>Da estilos de manera creativa</span>
+            <br>
+            <span><a href="https://dayspedia.com/time/online/?lang=es">Ejemplo</a></span>
+        </div>
+        <button class="accordion">Ejercicio 10</button>
+        <div class="panel">
+            <span>Crear un botón para poner en modo oscuro el reloj digital</span>
+            <br>
+            <span>Para hacer esto recuerda que puedes cambiar los estilos en JavaScript</span>
+            <button class="Modo_oscuro" onclick="modoOscuro()">Modo oscuro <i class="fa-solid fa-moon"></i></button>
+        </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="respuestaModal"></p>
+        </div>
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>
